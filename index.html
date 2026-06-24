@@ -1,151 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaurav Kumar | Portfolio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#f4f4f4;
-    color:#333;
-}
-
-header{
-    background:#24292e;
-    color:white;
-    text-align:center;
-    padding:40px;
-}
-
-header h1{
-    font-size:40px;
-}
-
-header p{
-    margin-top:10px;
-    font-size:18px;
-}
-
-section{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.card{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-h2{
-    color:#24292e;
-    margin-bottom:15px;
-}
-
-.skills span{
-    display:inline-block;
-    background:#24292e;
-    color:white;
-    padding:8px 15px;
-    border-radius:20px;
-    margin:5px;
-}
-
-.project{
-    margin-bottom:15px;
-}
-
-footer{
-    text-align:center;
-    background:#24292e;
-    color:white;
-    padding:20px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Kumar - Data Analyst & Insights Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <h1>Gaurav Kumar</h1>
-    <p>MCA Student | Aspiring Data Analyst</p>
-</header>
-
-<section>
-
-<div class="card">
-    <h2>About Me</h2>
-    <p>
-        I am an MCA student at NIET Greater Noida with a strong interest in
-        Data Analytics and Software Development. I enjoy working with data,
-        solving problems, and building practical projects using modern tools.
-    </p>
-</div>
-
-<div class="card">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Java</span>
-        <span>SQL</span>
-        <span>Excel</span>
-        <span>Power BI</span>
-        <span>GitHub</span>
-        <span>Data Analytics</span>
-    </div>
-</div>
-
-<div class="card">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Student Management System</h3>
-        <p>Java-based application to manage student records efficiently.</p>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
     </div>
 
-    <div class="project">
-        <h3>Merit Ranking System</h3>
-        <p>Web-based ranking platform using Java and MySQL.</p>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">📊</span>
+                <span class="brand-text">Gaurav Kumar</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" data-nav>Home</a></li>
+                <li><a href="#about" data-nav>About</a></li>
+                <li><a href="#expertise" data-nav>Expertise</a></li>
+                <li><a href="#projects" data-nav>Projects</a></li>
+                <li><a href="#testimonials" data-nav>Testimonials</a></li>
+                <li><a href="#contact" data-nav>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="project">
-        <h3>Data Analytics Dashboard</h3>
-        <p>Interactive dashboard created using Excel and Power BI.</p>
-    </div>
+    <!-- Hero Section with Scroll Animation -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Transform Data Into <span class="gradient-text">Powerful Insights</span></h1>
+                <p class="hero-subtitle">Data Analyst | Business Intelligence Specialist | Insights Creator</p>
+                <p class="hero-description">Leveraging advanced analytics, visualization, and data science to drive strategic business decisions and unlock hidden value in your data.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">View My Work</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Let's Connect</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Data Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="data-visualization">
+                    <div class="chart-bar" style="--height: 70%;"></div>
+                    <div class="chart-bar" style="--height: 85%;"></div>
+                    <div class="chart-bar" style="--height: 60%;"></div>
+                    <div class="chart-bar" style="--height: 90%;"></div>
+                    <div class="chart-bar" style="--height: 75%;"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Data Driven</p>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-brain"></i>
+                    <p>AI Insights</p>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-bolt"></i>
+                    <p>Real-time</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
 
-</div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate data analyst dedicated to uncovering meaningful patterns and driving strategic decisions through data. With expertise spanning SQL, Python, Excel, Tableau, and Power BI, I transform raw data into compelling narratives.</p>
+                    <p>My approach combines technical rigor with business acumen, ensuring every analysis delivers measurable impact. I'm obsessed with data quality, automation, and creating dashboards that tell stories.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert in ETL processes and data pipeline optimization</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Proficient in statistical analysis and predictive modeling</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Specialist in interactive dashboard design and storytelling</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Proven track record of cost reduction and revenue optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="avatar-box">
+                        <div class="avatar-placeholder">📈</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-    <h2>Certifications</h2>
-    <ul>
-        <li>Cisco Data Analytics Certificate</li>
-        <li>Deloitte Data Analytics Virtual Experience</li>
-        <li>AI Fundamentals Certification</li>
-    </ul>
-</div>
+    <!-- Expertise Section with Interactive Cards -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="card-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Engineering</h3>
+                    <p>SQL optimization, ETL processes, data warehousing, pipeline architecture, and data quality assurance</p>
+                    <div class="card-tags">
+                        <span>SQL</span>
+                        <span>Python</span>
+                        <span>ETL</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Business Intelligence</h3>
+                    <p>Dashboard design, KPI tracking, reporting automation, and business metrics analysis</p>
+                    <div class="card-tags">
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                        <span>Looker</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Statistical modeling, predictive analytics, machine learning, and customer segmentation</p>
+                    <div class="card-tags">
+                        <span>Python</span>
+                        <span>R</span>
+                        <span>ML</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data Visualization</h3>
+                    <p>Interactive dashboards, storytelling with data, and visual communication strategies</p>
+                    <div class="card-tags">
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                        <span>Excel</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <p>Data manipulation, automation scripting, and development of analytical solutions</p>
+                    <div class="card-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>VBA</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Strategic Insights</h3>
+                    <p>Business process optimization, ROI analysis, and actionable recommendations</p>
+                    <div class="card-tags">
+                        <span>Analysis</span>
+                        <span>Strategy</span>
+                        <span>Insights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-    <h2>Contact</h2>
-    <p>Email: your-email@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
-</div>
+    <!-- Projects Section with Filter -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+                <button class="filter-btn" data-filter="analysis">Analysis</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="project-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Sales Dashboard</h3>
+                        <p>Real-time sales analytics dashboard tracking KPIs across multiple regions with drill-down capabilities and predictive forecasting.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-check-circle"></i> 40% efficiency increase</span>
+                            <span><i class="fas fa-check-circle"></i> $2.5M revenue impact</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Tableau</span>
+                            <span>SQL</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
 
-</section>
+                <div class="project-card" data-category="analysis">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="project-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Segmentation Study</h3>
+                        <p>Advanced clustering analysis identifying 8 customer segments with tailored marketing strategies and personalization recommendations.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-check-circle"></i> 8 segments identified</span>
+                            <span><i class="fas fa-check-circle"></i> 35% conversion lift</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
 
-<footer>
-    <p>© 2026 Gaurav Kumar | Portfolio Website</p>
-</footer>
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="project-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Financial Performance Dashboard</h3>
+                        <p>Comprehensive financial analytics platform monitoring budget vs. actual, variance analysis, and trend forecasting with executive summaries.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-check-circle"></i> Real-time monitoring</span>
+                            <span><i class="fas fa-check-circle"></i> $1.2M savings</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Excel</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-card" data-category="automation">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="project-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Automated Reporting System</h3>
+                        <p>End-to-end ETL pipeline automating daily data collection, transformation, and report generation, reducing manual effort by 20 hours/week.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-check-circle"></i> 20 hrs/week saved</span>
+                            <span><i class="fas fa-check-circle"></i> 99.9% uptime</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Airflow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="analysis">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="project-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Supply Chain Optimization</h3>
+                        <p>Data-driven supply chain analysis identifying bottlenecks, optimizing inventory levels, and reducing operational costs by 18%.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-check-circle"></i> 18% cost reduction</span>
+                            <span><i class="fas fa-check-circle"></i> Better forecasting</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>Tableau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                        <div class="project-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HR Analytics Platform</h3>
+                        <p>Workforce analytics platform tracking employee metrics, retention risks, and performance trends with predictive attrition modeling.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-check-circle"></i> 15% attrition reduced</span>
+                            <span><i class="fas fa-check-circle"></i> Better retention</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>R</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VBA</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>BI & Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Tableau</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Power BI</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Looker</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Excel</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MongoDB</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Statistical & ML</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Statistical Analysis</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Machine Learning</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Predictive Modeling</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Data Science</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Gaurav transformed our raw data into actionable insights. His dashboard reduced our reporting time by 80% and revealed critical business opportunities we missed."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💼</div>
+                        <div>
+                            <h4>Rajesh Sharma</h4>
+                            <p>CEO, Tech Solutions Inc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Exceptional analytical skills and attention to detail. Gaurav's predictive models helped us save $2.5M in operational costs. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩‍💻</div>
+                        <div>
+                            <h4>Priya Patel</h4>
+                            <p>Director, Data Strategy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Gaurav was a game-changer. His customer segmentation analysis led to a 35% increase in conversion rates. Truly outstanding work!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💼</div>
+                        <div>
+                            <h4>Arjun Verma</h4>
+                            <p>VP, Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Create Something Amazing</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Project Title">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell me about your project..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>gaurav.kumar@datainsights.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9876 543 210</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/gaurav-kumar-data-analyst" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/gaurav-kumar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Gaurav Kumar. All rights reserved. | Crafted with <span class="heart">❤️</span> and Data</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
